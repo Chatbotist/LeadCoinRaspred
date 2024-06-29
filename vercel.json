@@ -1,0 +1,39 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "server.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "public/**",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "/server.js"
+      },
+      {
+        "src": "/Coin",
+        "dest": "/Coin/index.html"
+      },
+      {
+        "src": "/Up",
+        "dest": "/Up/index.html"
+      },
+      {
+        "src": "/Tasks",
+        "dest": "/Tasks/index.html"
+      },
+      {
+        "src": "/Top",
+        "dest": "/Top/index.html"
+      },
+      {
+        "src": "/public/(.*)",
+        "dest": "/public/$1"
+      }
+    ]
+  }
