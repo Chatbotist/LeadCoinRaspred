@@ -1,29 +1,27 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Coin Game - Coin</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Coin Page</title>
+  <link rel="stylesheet" href="/public/style.css">
 </head>
 <body>
-<div class="container">
-  <div id="coinSection" class="section active">
-    <div id="balance">0</div>
-    <div id="level">Уровень: 1</div>
-    <div id="developers">Разработчики: 0</div>
+  <div class="container">
+    <h1>Coin Page</h1>
+    <div class="coin"></div>
+    <div id="balance">Баланс: 0</div>
     <div class="progress-bar">
-      <div class="progress-bar-inner" id="progress"></div>
+      <div class="progress-bar-inner"></div>
     </div>
-    <div class="coin" id="coin"></div>
+    <div id="level">Уровень: 1</div>
+    <div id="developers">Разработчики: <a href="https://example.com">example.com</a></div>
   </div>
-</div>
-<div class="menu">
-  <button id="coinButton" class="active" onclick="window.location.href='../Coin/index.html'">Coin</button>
-  <button id="upButton" onclick="window.location.href='../Up/index.html'">Up</button>
-  <button id="taskButton" onclick="window.location.href='../Tasks/index.html'">Tasks</button>
-  <button id="topButton" onclick="window.location.href='../Top/index.html'">Top</button>
-</div>
-<script src="script.js"></script>
+  <div class="menu">
+    <button onclick="location.href='/Coin'">Coin</button>
+    <button onclick="location.href='/Up'">Up</button>
+    <button onclick="location.href='/Tasks'">Tasks</button>
+    <button onclick="location.href='/Top'">Top</button>
+  </div>
+  <script src="/public/script.js"></script>
 </body>
 </html>
