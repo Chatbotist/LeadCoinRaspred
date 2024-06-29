@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Coin Game - Top</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Top Page</title>
+  <link rel="stylesheet" href="/public/style.css">
 </head>
 <body>
-<div class="container">
-  <div id="topSection" class="section active">
-    <div class="section-title">Top Players</div>
-    <div class="ranking-container" id="ranking"></div>
+  <div class="container">
+    <h1>Top Page</h1>
+    <p>Контент для страницы Top</p>
   </div>
-</div>
-<div class="menu">
-    <button id="coinButton" onclick="window.location.href='../Coin/index.html'">Coin</button>
-    <button id="upButton" onclick="window.location.href='../Up/index.html'">Up</button>
-    <button id="taskButton" onclick="window.location.href='../Tasks/index.html'">Tasks</button>
-    <button id="topButton" class="active" onclick="window.location.href='../Top/index.html'">Top</button>
+  <div class="menu">
+    <button onclick="location.href='/Coin'">Coin</button>
+    <button onclick="location.href='/Up'">Up</button>
+    <button onclick="location.href='/Tasks'">Tasks</button>
+    <button onclick="location.href='/Top'">Top</button>
   </div>
-  <script src="script.js"></script>
-  </body>
-  </html>
+</body>
+</html>
