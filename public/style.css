@@ -92,4 +92,65 @@ body {
   width: 80%;
   height: 10px;
   background: rgba(255, 255, 255, 0.2);
-  border-radius
+  border-radius: 10px;
+  margin: 10px auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.progress-bar-inner {
+  height: 100%;
+  background: linear-gradient(to right, #00DE70, #0496BC);
+  width: 0;
+  transition: width 0.3s;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2C2F36;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 30;
+}
+
+.menu button {
+  background-color: #2C2F36;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
+  margin: 0;
+  user-select: none;
+}
+
+.menu button.active {
+  background-color: #1F2126;
+}
+
+.menu button:hover, .menu button:active {
+  background-color: #1F2126;
+}
+
+.section {
+  display: none;
+  flex-grow: 1;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.section.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  margin-top: 0;
+}
